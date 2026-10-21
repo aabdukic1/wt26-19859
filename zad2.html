@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="bs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rezervacija termina - Radionica pripreme kafe</title>
+</head>
+<body>
+
+    <div>
+        <h1>Rezervacija radionice kafe ☕</h1>
+        <p>Popunite formu ispod kako biste rezervisali vaše mjesto na praktičnoj radionici.</p>
+
+        <form action="#" method="post" onsubmit="event.preventDefault(); alert('Rezervacija je evidentirana u demonstracijskom modu!');">
+            
+            <p>
+                <label for="ime-prezime">Ime i prezime:</label>
+                <input type="text" id="ime-prezime" name="ime_prezime" placeholder="npr. Nejra Hadžić" required>
+            </p>
+
+            <p>
+                <label for="email">E-mail adresa:</label>
+                <input type="email" id="email" name="email" placeholder="vaša.adresa@email.com" required>
+            </p>
+
+            <p>
+                <label for="termin">Odaberite željeni termin radionice:</label>
+                <select id="termin" name="termin" required>
+                    <option value="" disabled selected>-- Odaberite termin --</option>
+                    <option value="petak-18">Petak, 18:00h - 20:00h</option>
+                    <option value="subota-12">Subota, 12:00h - 14:00h</option>
+                    <option value="subota-17">Subota, 17:00h - 19:00h</option>
+                    <option value="nedjelja-11">Nedjelja, 11:00h - 13:00h</option>
+                </select>
+            </p>
+
+            <div>
+                <label>Koje vrste kafe vas najviše zanimaju? (moguće više izbora):</label>
+                
+                <label>
+                    <input type="checkbox" name="interesi" value="espresso"> Espresso i mliječni napici (Cappuccino, Latte)
+                </label>
+                
+                <label>
+                    <input type="checkbox" name="interesi" value="tradicionalna"> Tradicionalna / Turska kafa
+                </label>
+
+                <label>
+                    <input type="checkbox" name="interesi" value="filter"> Filter kafa (V60, Chemex, Aeropress)
+                </label>
+
+                <label>
+                    <input type="checkbox" name="interesi" value="coldbrew"> Cold Brew / Hladno pripremljena kafa
+                </label>
+            </div>
+
+            <button type="submit">Potvrdi rezervaciju</button>
+
+        </form>
+    </div>
+
+</body>
+</html>
