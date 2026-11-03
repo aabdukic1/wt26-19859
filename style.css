@@ -19,6 +19,6 @@ body {
     font-weight: bold;
   }
   
-  td {
+  td:nth-child(2n+1) {
     background-color: #FFF2CC;
   }
